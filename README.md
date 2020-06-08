@@ -13,8 +13,8 @@ Build in local docker
 
 ## Create noip duc config files
 
-<pre>docker run -it -v c:\development\docker-no-ip-duc\conf:/opt/noip2/conf -e INIT=true noip-duc</pre>
+<pre>docker run -it --rm -v c:\development\docker-no-ip-duc\conf:/opt/noip2/conf -e INIT=true noip-duc</pre>
 
 ## Run noip duc
 
-<pre>docker run -it -v c:\development\docker-no-ip-duc\conf:/opt/noip2/conf noip-duc</pre>
+<pre>docker run -d --name noip-duc --restart always -v c:\development\docker-no-ip-duc\conf:/opt/noip2/conf si24803/docker-no-ip-duc:latest</pre>
