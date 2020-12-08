@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 if [ $INIT ] ; then
     noip2 -C -c /opt/noip2/conf/noip2.conf
 else
